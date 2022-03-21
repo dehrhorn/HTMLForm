@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vacation Time!</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <nav>
+        Enter the Contest for the Vacation of a Lifetime
+    </nav>
+    <main>
+        <h2>Vacation Contest Sign-Up Form</h2>
+        <form method="GET" action="results.html"> 
+            <!-- TODO: Set Action and Method Properties -->
+            <div>
+                <label for="firstname">Your First Name<span class="required-field">*</span></label>
+                <input type="text" id="firstname" name="firstname" minlength="2" maxlength="35" required>
+                <!-- TODO: Create a "lastname" input with type "text" -->
+                <label for="lastname">Your Last Name<span class="required-field">*</span></label>
+                <input type="text" id="lastname" name="lastname" minlength="2" maxlength="35" required>
+                <label for="age">Your Age</label>
+                <input type="number" id="age" name="age" min="21" max="120">
+                <label for="password">Your Secret Code (must be 6 alphanumeric characters)<span class="required-field">*</span></label>
+                <input type="password" id="password" name="password" pattern="[0-9a-zA-Z]{6}" title="6-Character Alphanumeric Pass Code" required>
+            </div>
+            <!-- TODO: Make fieldset and legend -->
+            <fieldset>
+                <legend>Your Contact info</legend>
+            <!-- Todo: Email Input -->
+                <div>
+                    <label for="email">Your Email<span class="required-field">*</span></label>
+                    <input type="email" id="email" name="email">
+                </div>
+            <!-- Todo: Street Address Input -->
+                <div>
+                    <label for="address">Your Street Address</label>
+                    <input type="text" id="address" name="address">
+                </div>
+            <!-- Todo: City, State, and Zip Inputs -->
+            <div>
+                <label for="city">Your City</label>
+                <input type="text" id="city" name="city">
+                <label for="state">Your State</label>
+                <input list="statelist" id="state" name="state">
+                <datalist id="statelist">
+                    <option value="Alabama"></option>
+                    <option value="Alaska"></option>
+                    <option value="Arizona"></option>
+                    <option value="Arkansas"></option>
+                    <option value="California"></option>
+                    <option value="Colorado"></option>
+                    <option value="Connecticut"></option>
+                    <option value="Delaware"></option>
+                    <option value="District of Columbia"></option>
+                    <option value="Florida"></option>
+                    <option value="Georgia"></option>
+                    <option value="Hawaii"></option>
+                    <option value="Idaho"></option>
+                    <option value="Illinois"></option>
+                    <option value="Indiana"></option>
+                    <option value="Iowa"></option>
+                    <option value="Kansas"></option>
+                    <option value="Kentucky"></option>
+                    <option value="Louisiana"></option>
+                    <option value="Maine"></option>
+                    <option value="Maryland"></option>
+                    <option value="Massachusetts"></option>
+                    <option value="Michigan"></option>
+                    <option value="Minnesota"></option>
+                    <option value="Mississippi"></option>
+                    <option value="Missouri"></option>
+                    <option value="Montana"></option>
+                    <option value="Nebraska"></option>
+                    <option value="Nevada"></option>
+                    <option value="New Hampshire"></option>
+                    <option value="New Jersey"></option>
+                    <option value="New Mexico"></option>
+                    <option value="New York"></option>
+                    <option value="North Carolina"></option>
+                    <option value="North Dakota"></option>
+                    <option value="Ohio"></option>
+                    <option value="Oklahoma"></option>
+                    <option value="Oregon"></option>
+                    <option value="Pennsylvania"></option>
+                    <option value="Rhode Island"></option>
+                    <option value="South Carolina"></option>
+                    <option value="South Dakota"></option>
+                    <option value="Tennessee"></option>
+                    <option value="Texas"></option>
+                    <option value="Utah"></option>
+                    <option value="Vermont"></option>
+                    <option value="Virginia"></option>
+                    <option value="Washington"></option>
+                    <option value="West Virginia"></option>
+                    <option value="Wisconsin"></option>
+                    <option value="Wyoming"></option>
+                </datalist>
+                <label for="zip">Your Zipcode</label>
+                <input type="number" id="zip" name="zip">
+
+            </div>
+        </fieldset>
+
+            <!-- TODO: Second fieldset -->
+        <fieldset>
+            <!-- TODO: Radio buttons for selecting preferred destination -->
+        <div>
+            <input type="radio" id="aruba" name="location" value="Aruba">
+            <label for="aruba">Aruba</label>
+        </div>
+        <div>
+            <input type="radio" id="japan" name="location" value="Japan">
+            <label for="japan">Japan</label>
+        </div>
+        <div>
+            <input type="radio" id="reykjavik" name="location" value="Reykjavik">
+            <label for="reykjavik">Reykjavik</label>
+        </div>
+        <div>
+            <input type="radio" id="new-zealand" name="location" value="New Zealand">
+            <label for="new-zealand">New Zealand</label>
+        </div>
+            <!-- TODO: Color input for selecting favorite color -->
+            <div>
+                <label for="color">Favorite Color</label>
+                <input type="color" id="color" name="color">
+            </div>
+            <!-- TODO: Checkboxes for selecting extra add-ons -->
+            <div>
+                <input type="checkbox" id="sauna" name="extras" value="Sauna Access" checked>
+                <label for="sauna">Sauna Access</label>
+            </div>
+            <div>
+                <input type="checkbox" id="drinks" name="extras" value="Drinks Package" checked>
+                <label for="drinks">All-Inclusive Drinks Package</label>
+            </div>
+            <div>
+                <input type="checkbox" id="ocean" name="extras" value="Ocean View" checked>
+                <label for="ocean">Ocean View</label>
+            </div>
+            <div>
+                <input type="checkbox" id="hottub" name="extras" value="Hot Tub" checked>
+                <label for="hottub">Hot Tub</label>
+            </div>
+        </fieldset>
+            <!-- TODO: Submit Button -->
+            <input type="submit" value="Enter The Contest!">
+        </form>
+    </main>
+    <footer>
+        <h2>Resource Attributions</h2>
+        <p>All images provided for free use via <a href="https://unsplash.com/">Unsplash.com</a> whose generous <a href="https://unsplash.com/license">license details can be found here</a>.</p>
+    </footer>
+</body>
+</html>
